@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finfu AI Support</title>
+  <title>Finfu AI</title>
+  <meta name="description" content="Finfu AI reads your bank statements, records your purchases on its own from your bank's alerts and tells you how much to pay on each card and when.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,9 +12,10 @@
     <nav class="nav-container">
       <a href="index.html" class="logo">Finfu AI</a>
       <div class="nav-links">
-        <a href="index.html">Support</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Use</a>
+        <a href="#planes">Plans</a>
+        <a href="#soporte">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
         <div class="language-switcher">
           <a href="index.html" class="active">English</a>
           <a href="index-es.html">Español</a>
@@ -23,49 +25,132 @@
   </header>
 
   <main class="main-container">
-    <div class="content">
-      <h1>Finfu AI Support</h1>
-      <p>Welcome to the official support page for <strong>Finfu AI</strong>, your personal financial assistant app.</p>
+    <section class="hero">
+      <h1>All your money, in one picture</h1>
+      <p class="hero-sub">Upload your bank statements and Finfu AI builds your accounts, what you really owe and your upcoming payments. Then your purchases are recorded on their own from your bank's alerts.</p>
+      <div class="cta-row">
+        <a class="cta cta-primary" href="https://finfuaiapp.com">Start free on the web</a>
+        <!-- App Store: reemplazar href con el enlace de la app cuando Apple la apruebe -->
+        <a class="cta" href="https://finfuaiapp.com" id="app-store-link">App Store</a>
+        <a class="cta" href="https://play.google.com/store/apps/details?id=com.luisrosales.finfuMobileApp">Google Play</a>
+      </div>
+      <p class="hero-note">Setting up your account is free. You choose a plan once you see your financial picture.</p>
+    </section>
 
-      <div class="section">
-        <h2>Contact Us</h2>
-        <p>If you need help, have questions, or want to report an issue, you can reach us:</p>
-        <div class="contact-info">
-          <p><strong>Email:</strong> <a href="mailto:finfuapp@gmail.com">finfuapp@gmail.com</a></p>
+    <section class="section">
+      <h2>What it does for you</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Reads your statements</h3>
+          <p>PDFs or screenshots from your bank: it builds your accounts, cards, installment purchases and balances without you typing anything.</p>
+        </div>
+        <div class="feature">
+          <h3>Records your purchases on its own</h3>
+          <p>From your bank's alerts: notifications on Android, Apple Pay on iPhone or your bank's emails. Anything it cannot record without guessing waits for you to decide.</p>
+        </div>
+        <div class="feature">
+          <h3>Your cards under control</h3>
+          <p>How much to pay on each card and by when to avoid interest, and which card is best for each purchase.</p>
+        </div>
+        <div class="feature">
+          <h3>An assistant that gets you</h3>
+          <p>Say "I spent 200 at the supermarket" or send a photo of the receipt and it records it. Ask whether you can afford something or where your money goes.</p>
+        </div>
+        <div class="feature">
+          <h3>Budgets and goals</h3>
+          <p>Know what you will have left at month end, when each installment plan ends and how much you saved.</p>
+        </div>
+        <div class="feature">
+          <h3>Alerts before each payment</h3>
+          <p>We let you know before a card is due or if you will not have enough to pay it.</p>
         </div>
       </div>
+    </section>
 
-      <div class="section">
-        <h2>Frequently Asked Questions (FAQ)</h2>
+    <section class="section" id="planes">
+      <h2>Plans</h2>
+      <p>Both include a free trial. Cancel anytime.</p>
+      <div class="plans">
+        <div class="plan">
+          <h3>Essential</h3>
+          <p class="plan-price">$79 MXN / month</p>
+          <p class="plan-year">or $599 MXN a year</p>
+          <ul>
+            <li>The whole app without AI: accounts, cards, budgets and goals</li>
+            <li>Automatic recording from your bank's alerts</li>
+            <li>Alerts before each payment</li>
+            <li>A few assistant questions to try it</li>
+          </ul>
+        </div>
+        <div class="plan plan-featured">
+          <h3>Intelligent</h3>
+          <p class="plan-price">$149 MXN / month</p>
+          <p class="plan-year">or $1,199 MXN a year</p>
+          <ul>
+            <li>Everything in Essential</li>
+            <li>The assistant records, corrects and analyzes for you</li>
+            <li>Reads your statements, receipts and screenshots</li>
+            <li>Tells you which debt to pay first and which card to use</li>
+          </ul>
+        </div>
+      </div>
+      <p class="hero-note">Prices in Mexico. The web trial is 14 days; on the App Store and Google Play, 7. In the United States: Essential $4.99 USD/month and Intelligent $9.99 USD/month.</p>
+    </section>
+
+    <section class="section">
+      <h2>Your information</h2>
+      <ul>
+        <li>We never ask for your bank password or connect to your bank.</li>
+        <li>Bank alerts are optional and you decide what reaches us.</li>
+        <li>Everything recorded automatically can be reviewed and undone.</li>
+        <li>We do not sell your data. You can delete your account and all your history from the app.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="soporte">
+      <h2>Support</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:finfuapp@gmail.com">finfuapp@gmail.com</a></p>
+      </div>
         <div class="faq-item">
           <p><strong>How do I subscribe?</strong><br>
-          You can subscribe directly in the app through the App Store purchase flow.</p>
+          In the app, once you finish setting up your account, or in Profile → Manage subscription. On iPhone you pay through the App Store, on Android through Google Play and on the web by card (Stripe).</p>
         </div>
         <div class="faq-item">
-          <p><strong>How do I restore my subscription?</strong><br>
-          On the subscription screen, tap "Restore Purchases".</p>
+          <p><strong>Can I use my plan on several devices?</strong><br>
+          Yes. Your plan belongs to your Finfu account: sign in with the same email on your phone or on the web. It is managed where you bought it.</p>
+        </div>
+        <div class="faq-item">
+          <p><strong>How do I cancel?</strong><br>
+          iPhone: Settings → your name → Subscriptions. Android: Google Play → Payments &amp; subscriptions. Web: in the app, Profile → Manage subscription. You keep your plan until the paid period ends.</p>
+        </div>
+        <div class="faq-item">
+          <p><strong>How do I restore my purchase?</strong><br>
+          On the plans screen tap "Restore purchases", with the same Apple or Google account you paid with.</p>
+        </div>
+        <div class="faq-item">
+          <p><strong>How do bank alerts work on iPhone?</strong><br>
+          iPhone does not let one app read another app's notifications. In Profile → Settings → Bank alerts you will find two step-by-step paths: a shortcut that records each Apple Pay purchase and forwarding your bank's emails.</p>
         </div>
         <div class="faq-item">
           <p><strong>How do I delete my account?</strong><br>
-          Contact us at <a href="mailto:finfuapp@gmail.com">finfuapp@gmail.com</a> to request account deletion.</p>
+          In the app: Profile → Account → Delete account. Your data is deleted. If you pay through the App Store or Google Play, also cancel the subscription there.</p>
         </div>
-      </div>
+    </section>
 
-      <div class="section">
-        <h2>Legal Documents</h2>
-        <p>Read our legal documents here:</p>
-        <ul>
-          <li><a href="privacy.html">Privacy Policy (English)</a></li>
-          <li><a href="privacy-es.html">Política de Privacidad (Español)</a></li>
-          <li><a href="terms.html">Terms of Use (English)</a></li>
-          <li><a href="terms-es.html">Términos de Uso (Español)</a></li>
-        </ul>
-      </div>
-    </div>
+    <section class="section">
+      <h2>Legal documents</h2>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy (English)</a></li>
+        <li><a href="privacy-es.html">Política de Privacidad (Español)</a></li>
+        <li><a href="terms.html">Terms of Use (English)</a></li>
+        <li><a href="terms-es.html">Términos de Uso (Español)</a></li>
+      </ul>
+    </section>
   </main>
 
   <footer class="footer">
-    <p>&copy; 2025 Finfu AI. All rights reserved.</p>
+    <p>&copy; 2026 Finfu AI. All rights reserved.</p>
   </footer>
 </body>
 </html>

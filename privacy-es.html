@@ -26,7 +26,7 @@
     <div class="content privacy-content">
       <h1>Política de Privacidad - Finfu AI</h1>
       <p><strong>Fecha de entrada en vigor:</strong> 30 de agosto de 2025<br>
-         <strong>Última actualización:</strong> 13 de octubre de 2026</p>
+         <strong>Última actualización:</strong> 5 de noviembre de 2026</p>
 
   <h2>1. Introducción</h2>
   <p>Bienvenido a Finfu AI ("nosotros"). Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos tu información cuando utilizas nuestra aplicación móvil y los servicios relacionados (colectivamente, el "Servicio").</p>
@@ -78,13 +78,22 @@
   </ul>
 
   <h3>2.7 Asistente con IA</h3>
-  <p>Cuando usas el asistente de Finfu AI, procesamos lo que le escribes o dictas y los datos de tus cuentas, movimientos y presupuestos que necesita para responderte. Si le adjuntas una foto de un ticket, capturas de pantalla o un estado de cuenta con el clip, el archivo se envía a nuestros servidores y lo lee un modelo de IA para proponerte los movimientos; nada se guarda hasta que lo apruebas.</p>
+  <p>Cuando usas el asistente de Finfu AI, procesamos lo que le escribes o dictas y los datos de tus cuentas, movimientos y presupuestos que necesita para responderte. Si le adjuntas una foto de un ticket, capturas de pantalla o un estado de cuenta con el clip, o subes tus estados de cuenta al configurar tu cuenta, el archivo se envía a nuestros servidores y lo lee un modelo de IA para proponerte los movimientos; nada se guarda hasta que lo apruebas.</p>
   <ul>
     <li>El texto del dictado lo convierte el reconocimiento de voz de tu teléfono o navegador</li>
     <li>El modelo de IA lo provee Anthropic, que procesa la información solo para generar la respuesta y no la usa para entrenar sus modelos</li>
     <li>Guardamos tus mensajes con el asistente para que puedas volver a verlos, hasta 90 días después de cada mensaje</li>
     <li>Puedes borrar todo tu historial con el asistente en Configuración; también se borra al eliminar tu cuenta</li>
   </ul>
+
+  <h3>2.8 Alertas del Banco</h3>
+  <p>Si lo activas, Finfu AI registra tus compras a partir de los avisos que te manda tu banco. Es opcional, lo configuras tú y puedes apagarlo cuando quieras. Llega por tres caminos:</p>
+  <ul>
+    <li><strong>Notificaciones en Android:</strong> con el permiso de acceso a notificaciones que tú otorgas, la app revisa en tu teléfono las notificaciones que recibes. Solo envía a nuestros servidores las que traen un monto y hablan de un movimiento de dinero (por ejemplo, «Compra por $389.00 en OXXO con tu tarjeta ****1234»); las demás no salen de tu teléfono ni se guardan. Puedes quitar el permiso en los ajustes de Android y dejar de leer una app en particular</li>
+    <li><strong>Apple Pay en iPhone:</strong> si creas el atajo de Finfu en la app Atajos, cada pago con Apple Pay nos envía el monto, el comercio y el nombre de la tarjeta. No tenemos acceso a tus notificaciones ni a Wallet</li>
+    <li><strong>Correos del banco:</strong> si reenvías los correos de alertas de tu banco a tu dirección personal de Finfu, los recibimos con Amazon SES, los leemos para obtener monto, comercio y tarjeta, y el correo se borra a los 7 días. Solo recibimos lo que tú decides reenviar</li>
+  </ul>
+  <p>Con esa información creamos el movimiento en tu cuenta o lo dejamos en una bandeja para que decidas. Las alertas pendientes se borran a los 30 días. Tu dirección y tu enlace llevan una llave secreta que puedes cambiar en la app. La lectura de estas alertas no usa IA.</p>
 
   <h2>3. Cómo Usamos tu Información</h2>
   <h3>3.1 Funcionalidad Principal</h3>
@@ -138,6 +147,7 @@
     <li>AWS (Amazon Web Services): alojamiento en la nube, almacenamiento de datos y servicios de API</li>
     <li>Anthropic: modelo de IA del asistente y de la lectura de documentos que adjuntas (ver 2.7)</li>
     <li>Apple App Store/Google Play Store: procesamiento de suscripciones y validación de recibos</li>
+    <li>Stripe: cobro de las suscripciones que contratas en la versión web; los datos de tu tarjeta los recibe Stripe, nunca nuestros servidores</li>
     <li>Proveedores de analíticas: monitoreo del rendimiento y uso de la aplicación</li>
   </ul>
 
@@ -176,6 +186,7 @@
     <li>Datos de transacciones: se conservan mientras la cuenta esté activa y por períodos de cumplimiento fiscal/legal</li>
     <li>Datos de suscripción: se retienen para facturación y cumplimiento legal</li>
     <li>Conversaciones con el asistente: hasta 90 días después de cada mensaje, o hasta que las borres</li>
+    <li>Alertas del banco: correos reenviados, 7 días; alertas pendientes de revisar, 30 días</li>
   </ul>
 
   <h2>7. Tus Derechos y Opciones</h2>
@@ -211,11 +222,13 @@
   <h3>10.1 Servicios de App Store</h3>
   <ul>
     <li>Apple App Store y Google Play Store para procesamiento de suscripciones</li>
+    <li>Stripe para las suscripciones de la versión web</li>
     <li>Validación de compras dentro de la app</li>
   </ul>
   <h3>10.2 Servicios AWS</h3>
   <ul>
     <li>Amazon Cognito para autenticación de usuarios</li>
+    <li>Amazon SES para recibir los correos del banco que reenvías (ver 2.8)</li>
     <li>AWS API Gateway para transmisión segura de datos</li>
     <li>Infraestructura de nube AWS para almacenamiento y procesamiento</li>
   </ul>

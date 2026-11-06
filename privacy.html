@@ -26,7 +26,7 @@
     <div class="content privacy-content">
       <h1>Privacy Policy - Finfu AI</h1>
       <p><strong>Effective Date:</strong> August 30, 2025<br>
-         <strong>Last Updated:</strong> October 13, 2026</p>
+         <strong>Last Updated:</strong> November 5, 2026</p>
 
   <h2>1. Introduction</h2>
   <p>Welcome to Finfu AI ("we," "our," or "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application and related services (collectively, the "Service").</p>
@@ -78,13 +78,22 @@
   </ul>
 
   <h3>2.7 AI Assistant</h3>
-  <p>When you use the Finfu AI assistant, we process what you type or dictate and the account, transaction and budget data it needs to answer you. If you attach a receipt photo, screenshots or a statement with the paperclip, the file is sent to our servers and read by an AI model to propose the transactions; nothing is saved until you approve it.</p>
+  <p>When you use the Finfu AI assistant, we process what you type or dictate and the account, transaction and budget data it needs to answer you. If you attach a receipt photo, screenshots or a statement with the paperclip, or upload your statements while setting up your account, the file is sent to our servers and read by an AI model to propose the transactions; nothing is saved until you approve it.</p>
   <ul>
     <li>Dictation is turned into text by your phone's or browser's speech recognition</li>
     <li>The AI model is provided by Anthropic, which processes the information only to produce the answer and does not use it to train its models</li>
     <li>We keep your messages with the assistant so you can see them again, for up to 90 days after each message</li>
     <li>You can delete your whole assistant history in Settings; it is also deleted when you delete your account</li>
   </ul>
+
+  <h3>2.8 Bank Alerts</h3>
+  <p>If you turn it on, Finfu AI records your purchases from the alerts your bank sends you. It is optional, you set it up yourself and you can turn it off at any time. It works three ways:</p>
+  <ul>
+    <li><strong>Android notifications:</strong> with the notification access permission you grant, the app checks the notifications you receive on your phone. It only sends to our servers those that carry an amount and describe a money movement (for example, "Purchase of $389.00 at OXXO with your card ****1234"); all others never leave your phone and are not stored. You can revoke the permission in Android settings and stop reading a specific app</li>
+    <li><strong>Apple Pay on iPhone:</strong> if you create the Finfu shortcut in the Shortcuts app, each Apple Pay payment sends us the amount, the merchant and the card's name. We have no access to your notifications or to Wallet</li>
+    <li><strong>Bank emails:</strong> if you forward your bank's alert emails to your personal Finfu address, we receive them with Amazon SES, read them to get the amount, merchant and card, and the email is deleted after 7 days. We only receive what you choose to forward</li>
+  </ul>
+  <p>With that information we create the transaction in your account or leave it in an inbox for you to decide. Pending alerts are deleted after 30 days. Your address and your link carry a secret key you can change in the app. Reading these alerts does not use AI.</p>
 
   <h2>3. How We Use Your Information</h2>
   <h3>3.1 Core App Functionality</h3>
@@ -138,6 +147,7 @@
     <li>AWS (Amazon Web Services): Cloud hosting, data storage, and API services</li>
     <li>Anthropic: The AI model behind the assistant and the reading of documents you attach (see 2.7)</li>
     <li>Apple App Store/Google Play Store: Subscription processing and receipt validation</li>
+    <li>Stripe: Billing for subscriptions you buy on the web version; your card details go to Stripe, never to our servers</li>
     <li>Analytics Providers: App performance monitoring and usage analytics</li>
   </ul>
 
@@ -176,6 +186,7 @@
     <li>Transaction Data: Retained while account is active and for tax/legal compliance periods</li>
     <li>Subscription Data: Retained for billing and legal compliance purposes</li>
     <li>Assistant Conversations: Up to 90 days after each message, or until you delete them</li>
+    <li>Bank Alerts: forwarded emails, 7 days; alerts pending review, 30 days</li>
   </ul>
 
   <h2>7. Your Rights and Choices</h2>
@@ -211,11 +222,13 @@
   <h3>10.1 App Store Services</h3>
   <ul>
     <li>Apple App Store and Google Play Store for subscription processing</li>
+    <li>Stripe for subscriptions on the web version</li>
     <li>In-app purchase validation and receipt processing</li>
   </ul>
   <h3>10.2 AWS Services</h3>
   <ul>
     <li>Amazon Cognito for user authentication</li>
+    <li>Amazon SES to receive the bank emails you forward (see 2.8)</li>
     <li>AWS API Gateway for secure data transmission</li>
     <li>AWS cloud infrastructure for data storage and processing</li>
   </ul>

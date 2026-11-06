@@ -272,7 +272,98 @@ li {
 }
 
 /* Responsive Design */
+/* Landing */
+.hero {
+  text-align: center;
+  padding: 3rem 0 2rem;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.hero-sub {
+  font-size: 1.15rem;
+  color: var(--text-light);
+  max-width: 640px;
+  margin: 0 auto 1.5rem;
+}
+
+.hero-note {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-top: 1rem;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 999px;
+  color: var(--primary-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cta-primary {
+  background: var(--primary-color);
+  color: var(--background-color);
+}
+
+.features,
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.feature,
+.plan {
+  background: var(--background-light);
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+}
+
+.feature h3,
+.plan h3 {
+  margin-bottom: 0.4rem;
+}
+
+.plan-featured {
+  border: 2px solid var(--primary-color);
+}
+
+.plan-price {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.plan-year {
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+}
+
+.plan ul {
+  padding-left: 1.2rem;
+}
+
 @media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.9rem;
+  }
+
+
   .nav-container {
     padding: 0 1rem;
     flex-direction: column;
