@@ -25,18 +25,19 @@
   <main class="main-container">
     <div class="content privacy-content">
       <h1>Política de Privacidad - Finfu AI</h1>
-      <p><strong>Fecha de entrada en vigor:</strong> 30 de agosto de 2025<br>
-         <strong>Última actualización:</strong> 5 de noviembre de 2026</p>
+      <p><strong>Última actualización y entrada en vigor:</strong> 25 de noviembre de 2026</p>
 
   <h2>1. Introducción</h2>
-  <p>Bienvenido a Finfu AI ("nosotros"). Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos tu información cuando utilizas nuestra aplicación móvil y los servicios relacionados (colectivamente, el "Servicio").</p>
+  <p>Finfu AI es operado por <strong>Luis Bryan Rosales Lopez</strong>, persona física que opera en México y responsable del tratamiento de los datos personales descritos en este aviso. Contacto de privacidad: <a href="mailto:finfuapp@gmail.com">finfuapp@gmail.com</a>.</p>
+  <p><strong>Domicilio para notificaciones:</strong> Calle Palmas 2010, C.P. 67176, Guadalupe, Nuevo León, México.</p>
+  <p>Bienvenido a Finfu AI ("nosotros"). Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos tu información cuando utilizas nuestra aplicación móvil, la versión web y los servicios relacionados (colectivamente, el "Servicio").</p>
   <p>Finfu AI es una aplicación de gestión financiera personal que ayuda a los usuarios a llevar un control de sus finanzas, administrar cuentas, crear presupuestos, monitorear transacciones y acceder a información financiera con inteligencia artificial mediante planes de suscripción.</p>
 
   <h2>2. Información que Recopilamos</h2>
   <h3>2.1 Información Personal</h3>
   <ul>
     <li>Información de cuenta: nombre, apellido, dirección de correo electrónico, número de teléfono</li>
-    <li>Datos de autenticación: nombre de usuario, contraseñas cifradas, códigos de verificación</li>
+    <li>Datos de autenticación: identificadores de acceso y verificación gestionados mediante Amazon Cognito; las contraseñas no se guardan en las bases de datos de la aplicación Finfu</li>
     <li>Información de perfil: preferencias del usuario, estado de onboarding, detalles de suscripción</li>
   </ul>
 
@@ -68,17 +69,12 @@
     <li>Datos de rendimiento: reportes de fallos, tiempos de carga, mensajes de error</li>
   </ul>
 
-  <h3>2.6 Importación de Transacciones en el Dispositivo</h3>
-  <p>Cuando usas la función de importación de transacciones, Finfu AI procesa capturas de pantalla bancarias, estados de cuenta en PDF y archivos CSV <strong>completamente en tu dispositivo</strong>. No nos conectamos a tu banco, no almacenamos credenciales bancarias ni enviamos archivos de importación sin procesar a nuestros servidores.</p>
-  <ul>
-    <li>El OCR y el análisis se ejecutan localmente en tu teléfono o tableta con bibliotecas en el dispositivo</li>
-    <li>Solo las transacciones que apruebas explícitamente se envían a los servidores de Finfu AI como registros estándar</li>
-    <li>La configuración de importación (mapeo de cuentas, reglas de categorización) se guarda localmente en tu dispositivo</li>
-    <li>No utilizamos agregadores de open banking de terceros (como Belvo o Syncfy) para esta función</li>
-  </ul>
+  <h3>2.6 Importación local y lectura de documentos con IA</h3>
+  <p>El tratamiento depende del flujo que elijas. La importación local utiliza OCR y análisis en tu dispositivo para preparar movimientos que revisas antes de guardar. La configuración local de importación se conserva en tu dispositivo. En cambio, cuando adjuntas un documento al asistente o lo subes a la lectura con IA durante la configuración de tu cuenta, el archivo se envía a nuestros servidores y al proveedor de IA para analizarlo, como explica la sección 2.7.</p>
+  <p>No nos conectamos a tu banco, no pedimos sus contraseñas y no utilizamos agregadores de open banking para estas funciones. Las alertas que registran movimientos automáticamente son un flujo distinto, opcional, descrito en la sección 2.8.</p>
 
   <h3>2.7 Asistente con IA</h3>
-  <p>Cuando usas el asistente de Finfu AI, procesamos lo que le escribes o dictas y los datos de tus cuentas, movimientos y presupuestos que necesita para responderte. Si le adjuntas una foto de un ticket, capturas de pantalla o un estado de cuenta con el clip, o subes tus estados de cuenta al configurar tu cuenta, el archivo se envía a nuestros servidores y lo lee un modelo de IA para proponerte los movimientos; nada se guarda hasta que lo apruebas.</p>
+  <p>Cuando usas el asistente de Finfu AI, procesamos lo que le escribes o dictas y los datos de tus cuentas, movimientos y presupuestos que necesita para responderte. Si le adjuntas una foto de un ticket, capturas de pantalla o un estado de cuenta con el clip, o subes tus estados de cuenta al configurar tu cuenta, el archivo se envía a nuestros servidores y lo lee un modelo de IA para proponerte los movimientos. Los movimientos propuestos no se guardan como registros financieros hasta que los apruebas; los mensajes y archivos se procesan para prestar el servicio y están sujetos a la retención descrita en esta política.</p>
   <ul>
     <li>El texto del dictado lo convierte el reconocimiento de voz de tu teléfono o navegador</li>
     <li>El modelo de IA lo provee Anthropic, que procesa la información solo para generar la respuesta y no la usa para entrenar sus modelos</li>
@@ -169,7 +165,7 @@
     <li>Cifrado: todos los datos se cifran en tránsito y en reposo</li>
     <li>Autenticación: autenticación segura de usuarios mediante AWS Cognito</li>
     <li>Controles de acceso: estrictos controles y requisitos de autenticación</li>
-    <li>Auditorías regulares: evaluaciones de seguridad continuas</li>
+    <li>Revisiones de seguridad y mantenimiento de controles de acceso</li>
   </ul>
 
   <h3>5.2 Protección de Datos Financieros</h3>
@@ -179,15 +175,19 @@
     <li>La información de cuentas está aislada y con acceso controlado</li>
   </ul>
 
-  <h2>6. Retención de Datos</h2>
+  <h2>6. Retención y eliminación de datos</h2>
+  <p>Conservamos tu perfil, cuentas financieras, movimientos y presupuestos mientras mantienes tu cuenta para prestar el servicio. Puedes borrar información desde la app o solicitar su cancelación mediante la sección 7.4. La eliminación de la cuenta retira sus datos asociados de las bases operativas; no supone que todas las copias desaparezcan instantáneamente.</p>
   <ul>
-    <li>Datos de cuenta: se conservan mientras la cuenta esté activa y un período razonable después del cierre</li>
-    <li>Datos financieros: se retienen hasta 7 años para fines contables y legales</li>
-    <li>Datos de transacciones: se conservan mientras la cuenta esté activa y por períodos de cumplimiento fiscal/legal</li>
-    <li>Datos de suscripción: se retienen para facturación y cumplimiento legal</li>
-    <li>Conversaciones con el asistente: hasta 90 días después de cada mensaje, o hasta que las borres</li>
-    <li>Alertas del banco: correos reenviados, 7 días; alertas pendientes de revisar, 30 días</li>
+    <li><strong>Conversaciones con el asistente:</strong> vencimiento de 90 días por mensaje o registro; puedes borrar el historial antes.</li>
+    <li><strong>Analítica de configuración y onboarding:</strong> vencimiento de 120 días desde la creación del registro de seguimiento.</li>
+    <li><strong>Correos bancarios reenviados:</strong> eliminación programada a los 7 días. Alertas pendientes de revisar: 30 días. Los registros auxiliares de alertas tienen plazos de 2 a 90 días, según su función; un movimiento ya confirmado sigue la retención de tu cuenta.</li>
+    <li><strong>Respaldos operativos:</strong> ventana de recuperación de hasta 35 días; las copias manuales que superan ese plazo se depuran en una comprobación horaria. Se utilizan para recuperación ante incidentes, no para reactivar el uso comercial de datos cuya eliminación hayas solicitado.</li>
+    <li><strong>Registros técnicos de funcionamiento y seguridad:</strong> retención configurada de hasta 90 días desde cada evento; algunos registros utilizan plazos menores.</li>
+    <li><strong>Documentación fiscal del operador:</strong> los comprobantes, facturas y registros necesarios para cumplir las obligaciones fiscales de Finfu se conservan, por regla general, durante cinco años desde la fecha en que se presentó o debió presentarse la declaración relacionada, conforme al artículo 30 del Código Fiscal de la Federación. Si hay efectos fiscales prolongados, recursos, juicios u otra obligación de conservación superior, se aplica el cómputo o plazo legal correspondiente. Esto no impone cinco años de conservación a todos tus movimientos financieros personales.</li>
   </ul>
+  <p>Los vencimientos y ciclos de eliminación se ejecutan de forma asíncrona. Por ello, el borrado físico puede ocurrir después de la fecha de vencimiento; el plazo configurado no es una garantía de borrado al segundo. Las excepciones legales se limitan a los datos y al tiempo necesarios. Los registros de pago que Apple, Google o Stripe conservan para sus propias obligaciones siguen también sus políticas.</p>
+  <p><strong>Procesamiento de IA:</strong> para la API comercial de Anthropic, su política estándar prevé eliminar entradas y salidas dentro de los 30 días de recepción o generación. Puede conservarlas por más tiempo por motivos legales o de seguridad: su política contempla hasta dos años para contenido señalado por posibles infracciones y hasta siete años para las puntuaciones de clasificación de seguridad. Eliminar el historial en Finfu no elimina instantáneamente esas copias del proveedor. No prometemos retención cero. Consulta la <a href="https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data">política de retención comercial de Anthropic</a>.</p>
+  <!-- Retention verified in AWS: 35-day PITR on 12 production tables; logs <=90 days; expired manual snapshots removed; hourly enforcement enabled. Evidence: retention-applied.json. -->
 
   <h2>7. Tus Derechos y Opciones</h2>
   <h3>7.1 Gestión de Cuenta</h3>
@@ -212,6 +212,12 @@
     <li>Controlar las comunicaciones de marketing</li>
   </ul>
 
+  <h3>7.4 Solicitudes de privacidad y derechos ARCO</h3>
+  <p>Puedes solicitar acceso, rectificación, cancelación u oposición al tratamiento de tus datos, así como revocar tu consentimiento o limitar usos no necesarios, escribiendo a <a href="mailto:finfuapp@gmail.com">finfuapp@gmail.com</a> con el asunto «Privacidad / ARCO». Incluye tu nombre, el correo asociado a Finfu, un medio de respuesta, el derecho que deseas ejercer y una descripción de los datos o cambios solicitados. Para rectificación, indica la corrección y aporta el soporte que corresponda.</p>
+  <p>Verificaremos tu identidad o representación antes de entregar o modificar datos. No envíes contraseñas, códigos de acceso ni documentos bancarios completos; si se requiere acreditar identidad, te indicaremos cómo aportar únicamente lo necesario.</p>
+  <p>Cuando resulte aplicable la legislación mexicana, comunicaremos la determinación en un máximo de 20 días hábiles y, si procede, la haremos efectiva dentro de los 15 días hábiles siguientes. Los plazos pueden ampliarse una sola vez por un período igual cuando el caso lo justifique. Informaremos el motivo si una solicitud no procede por una excepción legal. El ejercicio de estos derechos es gratuito, salvo los costos legalmente permitidos de reproducción o envío.</p>
+  <p>Puedes desactivar notificaciones y permisos opcionales sin eliminar tu cuenta. Revocar un tratamiento indispensable para prestar el servicio puede impedir el uso de la función correspondiente. La revocación no tiene efectos retroactivos.</p>
+
   <h2>8. Privacidad de Menores</h2>
   <p>Finfu AI no está destinado a usuarios menores de 18 años. No recopilamos conscientemente información de menores. Si detectamos que hemos recopilado datos de un menor de 18 años, los eliminaremos de inmediato.</p>
 
@@ -233,8 +239,8 @@
     <li>Infraestructura de nube AWS para almacenamiento y procesamiento</li>
   </ul>
 
-  <h2>11. Derechos de Privacidad en California</h2>
-  <p>Los residentes de California tienen derechos adicionales bajo la Ley de Privacidad del Consumidor de California (CCPA), incluyendo el derecho a saber qué información personal se recopila, el derecho a eliminar datos y el derecho a optar por no vender información personal.</p>
+  <h2>11. Derechos según tu lugar de residencia</h2>
+  <p>Finfu opera desde México. Puedes ejercer los derechos de acceso, rectificación, cancelación y oposición conforme a la legislación mexicana mediante el procedimiento de la sección 7.4. Si otra legislación de privacidad resulta aplicable por tu lugar de residencia, también respetaremos los derechos que te reconozca, sujetos a sus requisitos y excepciones. No vendemos tus datos personales.</p>
 
   <h2>12. Cambios en esta Política de Privacidad</h2>
   <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Notificaremos cambios importantes mediante:</p>
@@ -252,7 +258,7 @@
   </main>
 
   <footer class="footer">
-    <p>&copy; 2025 Finfu AI. Todos los derechos reservados.</p>
+    <p>&copy; 2026 Finfu AI. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
